@@ -1,0 +1,7 @@
+1、根绝role角色管理创建商品管理-分类管理
+  src\views\modules\product\category.vue
+2、存在跨域情况
+  修改static\config\index.js，访问地址统一修改为网关地址http://localhost:88/api
+3.分类列表展示
+4.删除
+5、新增
