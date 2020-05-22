@@ -5,3 +5,15 @@
 3.分类列表展示
 4.删除
 5、新增
+
+
+6、文件上传components/upload
+  multiUpload.vue多文件上传
+  singleUpload.vue单文件上传
+  使用文件上传需要在上面两个组件里面修改自己的域名Bucket 域名
+                 gulimall-jlm.oss-cn-beijing.aliyuncs.com
+  action="http://gulimall-jlm.oss-cn-beijing.aliyuncs.com"
+
+  @代表从src目录开始
+
+
