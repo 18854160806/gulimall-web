@@ -16,4 +16,7 @@
 
   @代表从src目录开始
 
-
+7、spu和sku
+  因为都要用到tree树的列表显示，所以单独放到一个公共文件夹views/modules/common
+  （1）子组件给父组件发送事件，例如点击tree之后给父组件传递，让父组件知道点击的哪个
+       this.$emit("tree-node-click",data,node,component)
