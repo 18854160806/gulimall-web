@@ -349,6 +349,7 @@
 import CategoryCascader from "../common/category-cascader";
 import BrandSelect from "../common/brand-select";
 import MultiUpload from "@/components/upload/multiUpload";
+import PubSub from 'pubsub-js'
 export default {
   //import引入的组件需要注入到对象中才能使用
   components: { CategoryCascader, BrandSelect, MultiUpload },
@@ -379,7 +380,7 @@ export default {
         baseAttrs: [], //基本属性
         skus: [] //所有sku信息
       },
-      spuBaseInfoRules: {
+    /*  spuBaseInfoRules: {
         spuName: [
           { required: true, message: "请输入商品名字", trigger: "blur" }
         ],
@@ -406,7 +407,7 @@ export default {
             trigger: "blur"
           }
         ]
-      },
+      },*/
       dataResp: {
         //后台返回的所有数据
         attrGroups: [],
@@ -458,13 +459,13 @@ export default {
         brandId: "",
         weight: "",
         publishStatus: 0,
-        decript: [], 
-        images: [], 
+        decript: [],
+        images: [],
         bounds: {
           buyBounds: 0,
           growBounds: 0
         },
-        baseAttrs: [], 
+        baseAttrs: [],
         skus: []
       };
     },
@@ -803,5 +804,5 @@ export default {
   activated() {} //如果页面有keep-alive缓存功能，这个函数会触发
 };
 </script>
-<style scoped>
+<style>
 </style>
